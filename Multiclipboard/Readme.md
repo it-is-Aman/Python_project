@@ -1,76 +1,69 @@
-Multi Clipboard Manager
+# Multi Clipboard Manager
 
-A Python script that allows you to manage and organize your clipboard data efficiently. You can save, load, delete, and list clipboard data using simple command-line operations.
-Features
+A Python script that simplifies clipboard data management by providing functions to save, load, delete, and list clipboard data using command-line operations.
 
-    Save Clipboard Data: Save clipboard content under a specified key for easy retrieval.
+## Features
 
-    Load Clipboard Data: Retrieve clipboard content associated with a key and copy it to the clipboard.
+- **Save Clipboard Data**: Save the current clipboard content under a user-specified key.
 
-    Delete Clipboard Data: Remove clipboard data associated with a specific key.
+- **Load Clipboard Data**: Copy clipboard content associated with a key to the clipboard.
 
-    List Clipboard Data: View all clipboard data along with their respective keys.
+- **Delete Clipboard Data**: Remove clipboard data associated with a specific key.
 
-Installation
+- **List Clipboard Data**: View all stored clipboard data and their respective keys.
 
-    Requirements: Make sure you have Python installed on your system.
+## Installation
 
-    Clone the Repository:
+1. **Prerequisites**: Ensure you have Python installed on your system.
 
-    bash
+2. **Clone the Repository**: Clone the repository to your local machine
+3. **Running the Script**:
 
-git clone https://github.com/your-username/multi-clipboard-manager.git
-cd multi-clipboard-manager
+    Use the following command to execute the script:
 
-Run the Script:
-
-bash
-
+    ```
     python multi_clipboard.py [command]
+    ```
+    Replace `[command]` with one of the following options:
+      *  save: Save clipboard data under a user-defined key.
+      *  load: Load clipboard data associated with a key.
+      *  delete: Delete clipboard data by key.
+      *  list: List all clipboard data.
 
-    Replace [command] with one of the following:
-        save: Save clipboard data under a key.
-        load: Load clipboard data associated with a key.
-        delete: Delete clipboard data by key.
-        list: List all clipboard data.
+## Usage
 
-Usage
-
-    Save Clipboard Data:
-
-    bash
-
+* Save Clipboard Data:
+```
 python multi_clipboard.py save
+```
+The script will prompt you to assign a key to the current clipboard content.
 
-The script will prompt you to assign a key to the clipboard content.
 
-Load Clipboard Data:
-
-bash
-
+* Load Clipboard Data:
+```
 python multi_clipboard.py load
+```
+You'll be asked to provide the key for the clipboard content you want to load.
 
-You'll be asked to enter the key for the clipboard content you want to load.
 
-Delete Clipboard Data:
-
-bash
-
+* Delete Clipboard Data:
+```
 python multi_clipboard.py delete
+```
+Specify the key of the clipboard data you want to delete.
 
-Provide the key of the clipboard data you want to delete.
 
-List Clipboard Data:
+* List Clipboard Data:
+```
+python multi_clipboard.py list
+```
+This command displays all saved clipboard data along with their respective keys.
 
-bash
 
-    python multi_clipboard.py list
+## Data Persistence
 
-    This will display all saved clipboard data along with their respective keys.
+Clipboard data is saved to a JSON file ('clipboard.json'), ensuring that your data remains available for future use, even after the script has finished executing.
 
-Data Persistence
+## Contributing
 
-Clipboard data is saved in a JSON file, ensuring that your data is persistently available even after script execution.
-Contributing
-
-Contributions are welcome! Feel free to open issues and pull requests.
+Contributions are welcome! If you'd like to contribute to the project, please feel free to open issues and submit pull requests.
